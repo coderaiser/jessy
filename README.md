@@ -1,7 +1,7 @@
 Jessy
 =======
 
-Get value by object property.
+Get value by object property. Use [nessy](https://github.com/coderaiser/nessy "nessy") to set value.
 
 ## Install
 
