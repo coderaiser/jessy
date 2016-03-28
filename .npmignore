@@ -1,0 +1,9 @@
+src
+dist
+test
+.jscsrc
+.babelrc
+.jshintrc
+bower.json
+.travis.yml
+.editorconfig

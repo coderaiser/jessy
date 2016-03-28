@@ -14,6 +14,35 @@
     "value",
     "property"
   ],
+  "scripts": {
+    "test": "tape test/*.js",
+    "jscs": "jscs --esnext src test",
+    "jshint": "jshint src test",
+    "codestyle": "npm-run-all jshint jscs",
+    "build": "npm-run-all clean 6to5 bundle bundle:es6 minify",
+    "minify": "minify dist/jessy.js > dist/jessy.min.js",
+    "6to5": "babel -d lib src",
+    "wisdom": "npm run build",
+    "jscs-fix": "npm run jscs --fix",
+    "clean": "rimraf lib/* dist/*",
+    "bundle:base": "browserify -s jessy --ng false",
+    "bundle": "npm run bundle:base -- -r ./lib/jessy.js:jessy ./lib/jessy.js -o dist/jessy.js",
+    "bundle:es6:base": "npm run bundle:base -- -r ./src/jessy.js:jessy ./src/jessy.js",
+    "bundle:es6": "npm run bundle:es6:base -- -o dist/jessy.es6.js",
+    "coverage": "nyc npm test",
+    "report": "nyc report --reporter=text-lcov | coveralls"
+  },
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "browserify": "^13.0.0",
+    "coveralls": "^2.11.9",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "minify": "^2.0.5",
+    "npm-run-all": "^1.6.0",
+    "nyc": "^6.1.1",
+    "tape": "^4.5.1"
+  }
 }
