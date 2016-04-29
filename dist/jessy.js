@@ -3,12 +3,17 @@
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-module.exports = function (selector, obj) {
+module.exports = function (selector, divider, obj) {
+    if (!obj) {
+        obj = divider;
+        divider = '.';
+    }
+
     check(selector, obj);
 
     var value = obj;
 
-    selector.split('.').some(function (name) {
+    selector.split(divider).some(function (name) {
         value = value[name];
 
         return !value;
