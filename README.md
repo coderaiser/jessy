@@ -18,7 +18,6 @@ jessy('hello.world', {
         }
     }
 });
-
 // returns
 'could be used in browser as well'
 
@@ -31,7 +30,6 @@ jessy('work-with-divider', '-', {
         }
     }
 });
-
 // returns
 'could use divider as well'
 ```
