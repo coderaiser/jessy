@@ -1,12 +1,17 @@
 'use strict';
 
-module.exports = (selector, obj) => {
+module.exports = (selector, divider, obj) => {
+    if (!obj) {
+        obj = divider;
+        divider = '.';
+    }
+    
     check(selector, obj);
     
     let value = obj;
     
     selector
-        .split('.')
+        .split(divider)
         .some((name) => {
             value = value[name];
             

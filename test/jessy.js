@@ -28,3 +28,15 @@ test('result: value from object', (t) => {
     t.end();
 });
 
+test('divider', (t) => {
+    const obj = {
+        hello: {
+            world: 'something'
+        }
+    };
+    
+    const actual = jessy('hello-world', '-', obj);
+    
+    t.equal(actual, 'something', 'should return value from object');
+    t.end();
+});

@@ -22,6 +22,18 @@ jessy('hello.world', {
 // returns
 'could be used in browser as well'
 
+jessy('work-with-divider', '-', {
+    work: {
+        with: {
+            divider: {
+                'could use divider as well'
+            }
+        }
+    }
+});
+
+// returns
+'could use divider as well'
 ```
 
 ## License
