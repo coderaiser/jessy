@@ -32,7 +32,8 @@
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=text-lcov | coveralls"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -41,7 +42,7 @@
     "jscs": "^3.0.3",
     "jshint": "^2.9.1",
     "minify": "^2.0.5",
-    "nyc": "^6.1.1",
+    "nyc": "^7.0.0",
     "redrun": "^4.0.0",
     "tape": "^4.5.1"
   }
