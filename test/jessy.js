@@ -40,3 +40,17 @@ test('divider', (t) => {
     t.equal(actual, 'something', 'should return value from object');
     t.end();
 });
+
+test('jessy: name with "_"', (t) => {
+    const obj = {
+        hello: {
+            world_min: 'something'
+        }
+    };
+    
+    const actual = jessy('hello_world_min', '_', obj);
+    
+    t.equal(actual, 'something', 'should return value from object');
+    t.end();
+});
+
