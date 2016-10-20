@@ -14,14 +14,8 @@ module.exports = (selector, divider, obj) => {
     
     selects
         .some((name, i) => {
-            let newValue = value[name];
-            
-            if (!newValue) {
-                const nestedName = selects.slice(i).join(divider);
-                newValue = value[nestedName] || value;
-            }
-            
-            value = newValue;
+            const nestedName = selects.slice(i).join(divider);
+            value = value[nestedName] || value[name] || value;
             
             return !value;
         });

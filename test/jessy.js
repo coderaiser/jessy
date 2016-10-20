@@ -54,3 +54,17 @@ test('jessy: name with "_"', (t) => {
     t.end();
 });
 
+test('jessy: name with "_": similar', (t) => {
+    const obj = {
+        hello: {
+            world: 'hello',
+            world_min: 'something'
+        }
+    };
+    
+    const actual = jessy('hello_world_min', '_', obj);
+    
+    t.equal(actual, 'something', 'should return value from object');
+    t.end();
+});
+
