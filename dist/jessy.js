@@ -13,8 +13,17 @@ module.exports = function (selector, divider, obj) {
 
     var value = obj;
 
-    selector.split(divider).some(function (name) {
-        value = value[name];
+    var selects = selector.split(divider);
+
+    selects.some(function (name, i) {
+        var newValue = value[name];
+
+        if (!newValue) {
+            var nestedName = selects.slice(i).join(divider);
+            newValue = value[nestedName] || value;
+        }
+
+        value = newValue;
 
         return !value;
     });

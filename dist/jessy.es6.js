@@ -11,10 +11,18 @@ module.exports = (selector, divider, obj) => {
     
     let value = obj;
     
-    selector
-        .split(divider)
-        .some((name) => {
-            value = value[name];
+    const selects = selector.split(divider);
+    
+    selects
+        .some((name, i) => {
+            let newValue = value[name];
+            
+            if (!newValue) {
+                const nestedName = selects.slice(i).join(divider);
+                newValue = value[nestedName] || value;
+            }
+            
+            value = newValue;
             
             return !value;
         });
@@ -29,6 +37,7 @@ function check(selector, obj) {
     if (typeof obj !== 'object')
         throw Error('obj should be object!');
 }
+
 
 },{}]},{},["jessy"])("jessy")
 });
