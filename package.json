@@ -16,6 +16,8 @@
   ],
   "scripts": {
     "test": "tape test/*.js",
+    "watcher": "nodemon -w test -w src --exec",
+    "watch:test": "npm run watcher -- npm test",
     "jscs": "jscs --esnext src test",
     "jshint": "jshint src test",
     "codestyle": "redrun jshint jscs",
@@ -42,6 +44,7 @@
     "jscs": "^3.0.3",
     "jshint": "^2.9.1",
     "minify": "^2.0.5",
+    "nodemon": "^1.11.0",
     "nyc": "^8.1.0",
     "redrun": "^5.0.1",
     "tape": "^4.5.1"
