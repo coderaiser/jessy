@@ -34,6 +34,14 @@ jessy('work-with-divider', '-', {
 'could use divider as well'
 ```
 
+
+## Environments
+
+In old `node.js` environments that not fully supports `es2015`, `jessy` could be used with:
+
+```js
+var jessy = require('jessy/legacy');
+```
 ## License
 
 MIT
