@@ -38,7 +38,7 @@ test('result: missing value from object', (t) => {
 test('result: value is an object', (t) => {
     const obj = {
         hello: {}
-    }
+    };
     const actual = jessy('hello', obj);
     
     t.deepEqual(actual, {}, 'should return value from object');
