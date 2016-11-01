@@ -1,5 +1,7 @@
 'use strict';
 
+const empty = (obj) => !Object.keys(obj).length;
+
 module.exports = (selector, divider, obj) => {
     if (!obj) {
         obj = divider;
@@ -8,15 +10,24 @@ module.exports = (selector, divider, obj) => {
     
     check(selector, obj);
     
+    if (empty(obj))
+        return null;
+    
     let value = obj;
     
     const selects = selector.split(divider);
+    const n = selects.length - 1;
     
     selects
         .some((name, i) => {
             const nestedName = selects.slice(i).join(divider);
             value = value[nestedName] || value[name] || value;
             
+            if (i === n && empty(obj)) {
+                value = null;
+                return false;
+            }
+             
             return !value;
         });
     

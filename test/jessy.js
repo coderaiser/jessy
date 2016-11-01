@@ -1,7 +1,7 @@
 'use strict';
 
-let test    = require('tape');
-let jessy   = require('../src/jessy');
+const test = require('tape');
+const jessy = require('../src/jessy');
 
 test('arguments: no', (t) => {
     t.throws(jessy, /selector should be string!/, 'should throw when no path');
@@ -25,6 +25,13 @@ test('result: value from object', (t) => {
     const actual        = jessy('hello.world', obj);
     
     t.equal(actual, 'something', 'should return value from object');
+    t.end();
+});
+
+test('result: missing value from object', (t) => {
+    const actual = jessy('hello.world', {});
+    
+    t.equal(actual, null, 'should return value from object');
     t.end();
 });
 
