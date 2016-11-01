@@ -35,6 +35,16 @@ test('result: missing value from object', (t) => {
     t.end();
 });
 
+test('result: value is an object', (t) => {
+    const obj = {
+        hello: {}
+    }
+    const actual = jessy('hello', obj);
+    
+    t.deepEqual(actual, {}, 'should return value from object');
+    t.end();
+});
+
 test('divider', (t) => {
     const obj = {
         hello: {

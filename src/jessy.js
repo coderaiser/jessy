@@ -23,7 +23,7 @@ module.exports = (selector, divider, obj) => {
             const nestedName = selects.slice(i).join(divider);
             value = value[nestedName] || value[name] || value;
             
-            if (i === n && empty(obj)) {
+            if (i === n - 1 && empty(obj)) {
                 value = null;
                 return false;
             }
