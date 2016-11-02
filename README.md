@@ -9,7 +9,7 @@ Get value by object property.
 ## Hot to use?
 
 ```js
-var jessy   = require('jessy');
+const jessy = require('jessy');
 
 jessy('hello.world', {
     hello: {
