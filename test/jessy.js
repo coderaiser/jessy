@@ -28,10 +28,21 @@ test('result: value from object', (t) => {
     t.end();
 });
 
-test('result: missing value from object', (t) => {
+test('result: missing value from empty object', (t) => {
     const actual = jessy('hello.world', {});
     
-    t.equal(actual, null, 'should return value from object');
+    t.equal(actual, undefined, 'should return undefined');
+    t.end();
+});
+
+test('result: missing value from object', (t) => {
+    const actual = jessy('hello.world', {
+        some: {
+            value: 'hi'
+        }
+    });
+    
+    t.equal(actual, undefined, 'should return undefined');
     t.end();
 });
 
