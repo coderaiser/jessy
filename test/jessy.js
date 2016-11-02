@@ -1,7 +1,7 @@
 'use strict';
 
 const test = require('tape');
-const jessy = require('../src/jessy');
+const jessy = require('..');
 
 test('arguments: no', (t) => {
     t.throws(jessy, /selector should be string!/, 'should throw when no path');
