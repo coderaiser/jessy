@@ -9,7 +9,7 @@ test('arguments: no', (t) => {
 });
 
 test('arguments: no obj', (t) => {
-    let fn = () => jessy('hello');
+    const fn = () => jessy('hello');
     
     t.throws(fn, /obj should be object!/, 'should throw when no obj');
     t.end();
