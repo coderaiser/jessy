@@ -1,6 +1,6 @@
 # Jessy [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
-Get value by object property. Use [nessy](https://github.com/coderaiser/nessy "nessy") to set value.
+Get value by object property.
 
 ## Install
 
@@ -42,6 +42,12 @@ In old `node.js` environments that not fully supports `es2015`, `jessy` could be
 ```js
 var jessy = require('jessy/legacy');
 ```
+
+## Related
+
+- [nessy](https://github.com/coderaiser/nessy "nessy") - set value in nested object.
+- [all-object-keys](https://github.com/coderaiser/all-object-keys "all-object-keys") - get all keys of object.
+
 ## License
 
 MIT
