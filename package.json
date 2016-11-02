@@ -20,7 +20,7 @@
     "watch:test": "npm run watcher -- npm test",
     "jscs": "jscs --esnext lib test",
     "jshint": "jshint lib test",
-    "codestyle": "jessy jshint jscs",
+    "lint": "redrun jshint jscs",
     "build": "redrun clean init 6to5 legacy:* bundle bundle:es6 minify",
     "minify": "minify dist/jessy.js > dist/jessy.min.js",
     "wisdom": "npm run build",
