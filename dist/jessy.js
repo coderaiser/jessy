@@ -15,7 +15,7 @@ module.exports = function (selector, divider, obj) {
 
     check(selector, obj);
 
-    if (empty(obj)) return null;
+    if (empty(obj)) return undefined;
 
     var value = obj;
 
@@ -24,12 +24,18 @@ module.exports = function (selector, divider, obj) {
 
     selects.some(function (name, i) {
         var nestedName = selects.slice(i).join(divider);
-        value = value[nestedName] || value[name] || value;
 
-        if (i === n - 1 && empty(obj)) {
-            value = null;
-            return false;
+        if (typeof value[nestedName] !== 'undefined') {
+            value = value[nestedName];
+            return true;
         }
+
+        if (!value[name]) {
+            value = undefined;
+            return true;
+        }
+
+        value = value[name];
 
         return !value;
     });
