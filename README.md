@@ -47,6 +47,7 @@ var jessy = require('jessy/legacy');
 
 - [nessy](https://github.com/coderaiser/nessy "nessy") - set value in nested object.
 - [all-object-keys](https://github.com/coderaiser/all-object-keys "all-object-keys") - get all keys of object.
+- [finicky](https://github.com/coderaiser/finicky "finicky") - delete property of an object
 
 ## License
 
