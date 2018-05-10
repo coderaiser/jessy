@@ -55,11 +55,11 @@ MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/jessy.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/jessy/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/jessy.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/jessy.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/jessy "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/jessy  "Build Status"
-[DependencyStatusURL]:      https://gemnasium.com/coderaiser/jessy "Dependency Status"
+[DependencyStatusURL]:      https://david-dm.org/coderaiser/jessy "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/jessy?branch=master
