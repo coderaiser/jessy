@@ -46,17 +46,16 @@
     "eslint": "^5.0.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-putout": "^1.4.4",
-    "minify": "^4.1.1",
-    "mkdirp": "^0.5.1",
-    "nodemon": "^1.11.0",
-    "nyc": "^13.3.0",
-    "redrun": "^6.0.0",
-    "madrun": "^2.1.2",
     "minify": "^3.0.0",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
+    "redrun": "^6.0.0",
+    "madrun": "^2.1.2",
     "putout": "^4.16.1",
     "supertape": "^1.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
