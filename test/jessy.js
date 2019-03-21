@@ -1,6 +1,6 @@
 'use strict';
 
-const test = require('tape');
+const test = require('supertape');
 const jessy = require('..');
 
 test('arguments: no', (t) => {
@@ -18,11 +18,11 @@ test('arguments: no obj', (t) => {
 test('result: value from object', (t) => {
     const obj = {
         hello: {
-            world: 'something'
-        }
+            world: 'something',
+        },
     };
     
-    const actual        = jessy('hello.world', obj);
+    const actual = jessy('hello.world', obj);
     
     t.equal(actual, 'something', 'should return value from object');
     t.end();
@@ -38,8 +38,8 @@ test('result: missing value from empty object', (t) => {
 test('result: missing value from object', (t) => {
     const actual = jessy('hello.world', {
         some: {
-            value: 'hi'
-        }
+            value: 'hi',
+        },
     });
     
     t.equal(actual, undefined, 'should return undefined');
@@ -48,7 +48,7 @@ test('result: missing value from object', (t) => {
 
 test('result: value is an object', (t) => {
     const obj = {
-        hello: {}
+        hello: {},
     };
     const actual = jessy('hello', obj);
     
@@ -59,8 +59,8 @@ test('result: value is an object', (t) => {
 test('divider', (t) => {
     const obj = {
         hello: {
-            world: 'something'
-        }
+            world: 'something',
+        },
     };
     
     const actual = jessy('hello-world', '-', obj);
@@ -72,8 +72,8 @@ test('divider', (t) => {
 test('jessy: name with "_"', (t) => {
     const obj = {
         hello: {
-            world_min: 'something'
-        }
+            world_min: 'something',
+        },
     };
     
     const actual = jessy('hello_world_min', '_', obj);
@@ -86,8 +86,8 @@ test('jessy: name with "_": similar', (t) => {
     const obj = {
         hello: {
             world: 'hello',
-            world_min: 'something'
-        }
+            world_min: 'something',
+        },
     };
     
     const actual = jessy('hello_world_min', '_', obj);
