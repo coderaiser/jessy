@@ -23,6 +23,9 @@
     "coverage": "madrun coverage",
     "report": "madrun report"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {},
   "license": "MIT",
   "devDependencies": {
