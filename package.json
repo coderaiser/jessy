@@ -40,7 +40,7 @@
   "license": "MIT",
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^5.0.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-putout": "^3.0.0",
     "madrun": "^2.1.2",
