@@ -39,20 +39,14 @@
   "dependencies": {},
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "babel-preset-env": "^1.6.0",
-    "browserify": "^16.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^5.0.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-putout": "^1.4.4",
-    "minify": "^3.0.0",
-    "mkdirp": "^0.5.1",
+    "madrun": "^2.1.2",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
-    "redrun": "^6.0.0",
-    "madrun": "^2.1.2",
-    "putout": "^4.16.1",
+    "putout": "^7.3.3",
     "supertape": "^1.2.3"
   },
   "publishConfig": {
