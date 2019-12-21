@@ -34,15 +34,6 @@ jessy('work-with-divider', '-', {
 'could use divider as well'
 ```
 
-
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `jessy` could be used with:
-
-```js
-var jessy = require('jessy/legacy');
-```
-
 ## Related
 
 - [nessy](https://github.com/coderaiser/nessy "nessy") - set value in nested object.
