@@ -46,6 +46,19 @@ test('result: missing value from object', (t) => {
     t.end();
 });
 
+test('result: empty selector', (t) => {
+    const obj = {
+        hello: {
+            world: 'something',
+        },
+    };
+    
+    const actual = jessy('', obj);
+    
+    t.equal(actual, obj);
+    t.end();
+});
+
 test('result: value is an object', (t) => {
     const obj = {
         hello: {},

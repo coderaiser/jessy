@@ -32,6 +32,14 @@ jessy('work-with-divider', '-', {
 });
 // returns
 'could use divider as well'
+
+jessy('', {
+    hello: 'world',
+});
+// returns
+{
+    hello: 'world'
+}
 ```
 
 ## Related
