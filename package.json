@@ -36,7 +36,7 @@
     "madrun": "^5.2.0",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
-    "putout": "^7.3.3",
+    "putout": "^9.11.4",
     "supertape": "^1.2.3"
   },
   "publishConfig": {
