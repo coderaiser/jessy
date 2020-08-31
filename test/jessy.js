@@ -28,6 +28,15 @@ test('result: value from object', (t) => {
     t.end();
 });
 
+test('result: value from object', (t) => {
+    const obj = {};
+    const result = jessy('', obj);
+    const expected = {};
+    
+    t.deepEqual(result, expected, 'should return value from object');
+    t.end();
+});
+
 test('result: missing value from empty object', (t) => {
     const actual = jessy('hello.world', {});
     
