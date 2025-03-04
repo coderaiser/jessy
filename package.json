@@ -30,7 +30,7 @@
     "report": "madrun report"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=18"
   },
   "dependencies": {},
   "license": "MIT",
@@ -44,6 +44,7 @@
     "nodemon": "^3.1.9",
     "nyc": "^15.0.0",
     "putout": "^38.5.1",
+    "redlint": "^3.19.1",
     "supertape": "^10.10.0"
   },
   "publishConfig": {
