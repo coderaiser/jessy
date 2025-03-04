@@ -1,6 +1,5 @@
 # Jessy [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
-
 [BuildStatusURL]: https://github.com/coderaiser/jessy/actions?query=workflow%3A%22Node+CI%22 "Build Status"
 [BuildStatusIMGURL]: https://github.com/coderaiser/jessy/workflows/Node%20CI/badge.svg
 [NPMURL]: https://npmjs.org/package/jessy "npm"
