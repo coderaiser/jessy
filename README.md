@@ -1,5 +1,15 @@
 # Jessy [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
+
+[BuildStatusURL]: https://github.com/coderaiser/jessy/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/jessy/workflows/Node%20CI/badge.svg
+[NPMURL]: https://npmjs.org/package/jessy "npm"
+[NPMIMGURL]: https://img.shields.io/npm/v/jessy.svg?style=flat
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[CoverageURL]: https://coveralls.io/github/coderaiser/jessy?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/jessy/badge.svg?branch=master&service=github
+
 Get value by object property.
 
 ## Install
@@ -50,12 +60,3 @@ jessy('', {
 ## License
 
 MIT
-
-[NPMIMGURL]: https://img.shields.io/npm/v/jessy.svg?style=flat
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/jessy/master.svg?style=flat
-[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]: https://npmjs.org/package/jessy "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/jessy "Build Status"
-[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
-[CoverageURL]: https://coveralls.io/github/coderaiser/jessy?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/jessy/badge.svg?branch=master&service=github
