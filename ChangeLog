@@ -1,3 +1,16 @@
+2025.03.04, v4.0.0
+
+feature:
+- 79d2d93 jessy: some -> for-of
+- 0215a74 jessy: drop support of node < 18
+- a17d50e jessy: c8 v10.1.3
+- c1b3c9a jessy: nodemon v3.1.9
+- 5345ae9 jessy: supertape v10.10.0
+- 05e616b jessy: madrun v10.2.5
+- 8467900 jessy: eslint-plugin-putout v25.0.3
+- 9b6c063 jessy: eslint v9.21.0
+- 269645d jessy: putout v38.5.1
+
 2020.09.01, v3.1.1
 
 fix:
