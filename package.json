@@ -43,7 +43,7 @@
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "putout": "^38.5.1",
-    "supertape": "^2.0.1"
+    "supertape": "^10.10.0"
   },
   "publishConfig": {
     "access": "public"
