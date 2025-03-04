@@ -121,3 +121,16 @@ test('jessy: name with "_": similar', (t) => {
     t.equal(actual, 'something', 'should return value from object');
     t.end();
 });
+
+test('jessy: "/" at the beginning', (t) => {
+    const obj = {
+        hello: {
+            world: 'hello',
+        },
+    };
+    
+    const actual = jessy('/hello/world', '/', obj);
+    
+    t.equal(actual, 'hello');
+    t.end();
+});
