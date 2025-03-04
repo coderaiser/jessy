@@ -3,3 +3,7 @@ node_modules
 npm-debug.log
 .nyc_output
 
+.idea
+*.swp
+yarn-error.log
+coverage

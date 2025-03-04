@@ -6,17 +6,19 @@ const jessy = require('..');
 
 test('arguments: no', (t) => {
     const [error] = tryCatch(jessy);
+    
     t.equal(error.message, 'selector should be string!', 'should throw when no path');
     t.end();
 });
 
 test('arguments: no obj', (t) => {
     const [error] = tryCatch(jessy, 'hello');
+    
     t.equal(error.message, 'obj should be object!', 'should throw when no obj');
     t.end();
 });
 
-test('result: value from object', (t) => {
+test('jessy: result: value from object', (t) => {
     const obj = {
         hello: {
             world: 'something',
@@ -29,7 +31,7 @@ test('result: value from object', (t) => {
     t.end();
 });
 
-test('result: value from object', (t) => {
+test('jessy: result: value from empty object', (t) => {
     const obj = {};
     const result = jessy('', obj);
     const expected = {};
@@ -80,7 +82,7 @@ test('result: value is an object', (t) => {
     t.end();
 });
 
-test('divider', (t) => {
+test('jessy: divider', (t) => {
     const obj = {
         hello: {
             world: 'something',
