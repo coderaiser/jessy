@@ -1,7 +1,7 @@
 {
   "name": "jessy",
   "version": "4.1.0",
-  "type": "commonjs",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "get value by object property",
   "homepage": "http://github.com/coderaiser/jessy",
@@ -25,7 +25,7 @@
     "report": "madrun report"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "dependencies": {},
   "license": "MIT",

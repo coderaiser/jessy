@@ -18,7 +18,7 @@ Get value by object property.
 ## Hot to use?
 
 ```js
-const jessy = require('jessy');
+import {jessy} from 'jessy';
 
 jessy('hello.world', {
     hello: {

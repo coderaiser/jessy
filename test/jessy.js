@@ -1,8 +1,6 @@
-'use strict';
-
-const test = require('supertape');
-const tryCatch = require('try-catch');
-const jessy = require('..');
+import test from 'supertape';
+import tryCatch from 'try-catch';
+import jessy from '../lib/jessy.js';
 
 test('arguments: no', (t) => {
     const [error] = tryCatch(jessy);
