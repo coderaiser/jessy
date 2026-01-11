@@ -40,7 +40,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^9.21.0",
     "eslint-plugin-putout": "^29.3.0",
-    "madrun": "^10.2.5",
+    "madrun": "^12.1.0",
     "nodemon": "^3.1.9",
     "putout": "^38.5.1",
     "redlint": "^5.0.3",
