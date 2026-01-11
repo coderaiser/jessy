@@ -1,7 +1,7 @@
 import {run} from 'madrun';
 
 export default {
-    'test': () => 'tape test/*.js',
+    'test': () => 'tape test/*.*',
     'watcher': () => 'nodemon -w test -w lib --exec',
     'watch:test': () => run('watcher', 'npm test'),
     'lint': () => 'putout .',
