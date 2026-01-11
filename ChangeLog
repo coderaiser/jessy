@@ -1,3 +1,14 @@
+2026.01.11, v5.0.0
+
+feature:
+- feacaeb jessy: try-catch v4.0.7
+- 734704f jessy: supertape v12.0.9
+- 67aa878 jessy: putout v41.6.5
+- 11a3375 jessy: madrun v12.1.0
+- ca0f700 jessy: eslint-plugin-putout v29.3.0
+- 30f8d5f jessy: redlint v5.0.3
+- 4744177 jessy: migrate to ESM
+
 2025.03.04, v4.1.0
 
 feature:
