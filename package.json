@@ -5,7 +5,13 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "get value by object property",
   "homepage": "http://github.com/coderaiser/jessy",
-  "main": "lib/jessy.js",
+  "main": "lib/jessy.cjs",
+  "exports": {
+    ".": {
+      "require": "./lib/jessy.cjs",
+      "import": "./lib/jessy.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderaiser/jessy.git"
@@ -37,7 +43,7 @@
     "madrun": "^10.2.5",
     "nodemon": "^3.1.9",
     "putout": "^38.5.1",
-    "redlint": "^3.19.1",
+    "redlint": "^5.0.3",
     "supertape": "^10.10.0",
     "try-catch": "^3.0.1"
   },
