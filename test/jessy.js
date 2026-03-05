@@ -1,6 +1,6 @@
 import test from 'supertape';
-import tryCatch from 'try-catch';
-import jessy from '../lib/jessy.js';
+import {tryCatch} from 'try-catch';
+import {jessy} from '../lib/jessy.js';
 
 test('arguments: no', (t) => {
     const [error] = tryCatch(jessy);
