@@ -1,3 +1,16 @@
+2026.03.05, v5.0.1
+
+fix:
+- 4b04413 jessy: ESM
+
+feature:
+- 22920cc jessy: superc8 v12.2.4
+- e1073ae jessy: redlint v6.1.2
+- d0b586a jessy: putout v42.0.25
+- e3d740b jessy: madrun v13.0.0
+- 7db8abc jessy: eslint-plugin-putout v31.0.2
+- 90c3f30 jessy: eslint v10.0.2
+
 2026.01.11, v5.0.0
 
 feature:
